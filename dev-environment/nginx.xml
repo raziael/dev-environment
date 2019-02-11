@@ -42,7 +42,7 @@
       <Mode>ro</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8081]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8980]/</WebUI>
   <Banner></Banner>
-  <Icon>https://secure.gravatar.com/avatar/614e0f6491dbb293e540190b02b3024e.jpg?s=80</Icon>
+  <Icon>https://s3.amazonaws.com/cntech.io/logos/nginx.png</Icon>
 </Containers>

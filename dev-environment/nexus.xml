@@ -6,17 +6,16 @@
   <Name>Nexus</Name>
   <Project>https://sonatype.com/</Project>
   <Changes>
-[font size=3]2019.02.10[/font]
-- Initial Release
+    [font size=3]2019.02.10[/font]
+    - Initial Release
   </Changes>
   <Overview>
-    Nexus repository
+    Sonatype Nexus repository
   </Overview>
   <Description>
-    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]
+    Store and distribute Maven/Java, npm, NuGet, RubyGems, Docker, P2, OBR, APT and YUM and more.[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : this is where PMS will store it's databases and configuration.[br][br]
-    [b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.
+    [b]/sonatype-work[/b] : this is where nexus will store it's databases and configuration.[br][br]
   </Description>
   <Registry>https://hub.docker.com/r/sonatype/nexus</Registry>
   <GitHub>https://github.com/sonatype/nexus3</GitHub>
@@ -41,7 +40,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8081]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8081]/nexus</WebUI>
   <Banner></Banner>
-  <Icon>https://secure.gravatar.com/avatar/614e0f6491dbb293e540190b02b3024e.jpg?s=80</Icon>
+  <Icon>https://s3.amazonaws.com/cntech.io/logos/nexus.png</Icon>
 </Containers>
