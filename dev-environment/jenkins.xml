@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2019-2-10</Date>
+  <Beta>False</Beta>
+  <Category>SoftwareDevelopment:CD SoftwareDevelopment:CI</Category>
+  <Name>Jenkins</Name>
+  <Project>https://jenkins.io/</Project>
+  <Changes>
+      [font size=3]2019.02.10[/font]
+      - Initial Release
+  </Changes>
+  <Overview>
+    The Jenkins Continuous Integration and Delivery server
+  </Overview>
+  <Description>
+    The Jenkins Continuous Integration and Delivery server[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/var/jenkins_home[/b] : this is where all jenkins data resides.[br][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.
+  </Description>
+  <Registry>https://hub.docker.com/_/jenkins</Registry>
+  <GitHub>https://github.com/jenkinsci/jenkins</GitHub>
+  <Repository>jenkins/jenkins:lts</Repository>
+  <Support>https://issues.jenkins-ci.org/secure/Dashboard.jspa</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8082</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/development/jenkins/home</HostDir>
+      <ContainerDir>/var/jenkins_home</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8081]/</WebUI>
+  <Banner></Banner>
+  <Icon>https://secure.gravatar.com/avatar/614e0f6491dbb293e540190b02b3024e.jpg?s=80</Icon>
+</Containers>
