@@ -18,9 +18,9 @@
     [b]/config[/b] : this is where PMS will store it's databases and configuration.[br][br]
     [b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.
   </Description>
-  <Registry>https://hub.docker.com/r/sonatype/nexus3</Registry>
+  <Registry>https://hub.docker.com/r/sonatype/nexus</Registry>
   <GitHub>https://github.com/sonatype/nexus3</GitHub>
-  <Repository>sonatype/nexus3</Repository>
+  <Repository>sonatype/nexus</Repository>
   <Support>https://issues.sonatype.org/projects/NEXUS</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
@@ -32,7 +32,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/development/nexus-data</HostDir>
-      <ContainerDir>/nexus-data</ContainerDir>
+      <ContainerDir>/sonatype-work</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
