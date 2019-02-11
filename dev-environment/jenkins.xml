@@ -39,7 +39,7 @@
     <Volume>
       <HostDir>/mnt/user/appdata/development/jenkins/home</HostDir>
       <ContainerDir>/var/jenkins_home</ContainerDir>
-      <Mode>ro</Mode>
+      <Mode>rw</Mode>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8081]/</WebUI>
