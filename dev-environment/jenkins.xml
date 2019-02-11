@@ -16,7 +16,6 @@
     The Jenkins Continuous Integration and Delivery server[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/var/jenkins_home[/b] : this is where all jenkins data resides.[br][br]
-    [b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.
   </Description>
   <Registry>https://hub.docker.com/_/jenkins</Registry>
   <GitHub>https://github.com/jenkinsci/jenkins</GitHub>
