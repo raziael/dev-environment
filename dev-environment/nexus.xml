@@ -20,7 +20,7 @@
   </Description>
   <Registry>https://hub.docker.com/r/sonatype/nexus</Registry>
   <GitHub>https://github.com/sonatype/nexus3</GitHub>
-  <Repository>sonatype/nexus</Repository>
+  <Repository>sonatype/nexus:latest</Repository>
   <Support>https://issues.sonatype.org/projects/NEXUS</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
