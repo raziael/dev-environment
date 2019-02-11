@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2019-2-10</Date>
+  <Beta>False</Beta>
+  <Category>SoftwareDevelopment:CD SoftwareDevelopment:CI</Category>
+  <Name>Nexus 3</Name>
+  <Project>https://sonatype.com/</Project>
+  <Changes>
+[font size=3]2019.02.10[/font]
+- Initial Release
+  </Changes>
+  <Overview>
+    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!
+  </Overview>
+  <Description>
+    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : this is where PMS will store it's databases and configuration.[br][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.
+  </Description>
+  <Registry>https://hub.docker.com/r/sonatype/nexus3</Registry>
+  <GitHub>https://github.com/sonatype/nexus3</GitHub>
+  <Repository>sonatype/nexus3</Repository>
+  <Support>https://issues.sonatype.org/projects/NEXUS</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/development/nexus-data</HostDir>
+      <ContainerDir>/nexus-data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8081]/</WebUI>
+  <Banner></Banner>
+  <Icon>https://secure.gravatar.com/avatar/614e0f6491dbb293e540190b02b3024e.jpg?s=80</Icon>
+</Containers>
