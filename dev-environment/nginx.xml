@@ -3,14 +3,14 @@
   <Date>2019-2-10</Date>
   <Beta>False</Beta>
   <Category>SoftwareDevelopment:CD SoftwareDevelopment:CI</Category>
-  <Name>Nexus</Name>
-  <Project>https://sonatype.com/</Project>
+  <Name>NginX</Name>
+  <Project>http://nginx.com/</Project>
   <Changes>
 [font size=3]2019.02.10[/font]
 - Initial Release
   </Changes>
   <Overview>
-    Nexus repository
+    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!
   </Overview>
   <Description>
     The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]
@@ -18,17 +18,18 @@
     [b]/config[/b] : this is where PMS will store it's databases and configuration.[br][br]
     [b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.
   </Description>
-  <Registry>https://hub.docker.com/r/sonatype/nexus</Registry>
-  <GitHub>https://github.com/sonatype/nexus3</GitHub>
-  <Repository>sonatype/nexus:latest</Repository>
-  <Support>https://issues.sonatype.org/projects/NEXUS</Support>
+  <Registry>https://hub.docker.com/_/nginx</Registry>
+  <GitHub>https://github.com/nginx</GitHub>
+  <Repository>nginx</Repository>
+  <Support>https://issues.nginx</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8081</HostPort>
-        <ContainerPort>8081</ContainerPort>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8082</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -36,9 +37,9 @@
   <Environment/>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/development/nexus-data</HostDir>
-      <ContainerDir>/sonatype-work</ContainerDir>
-      <Mode>rw</Mode>
+      <HostDir>/mnt/user/appdata/development/nginx/nginx.conf</HostDir>
+      <ContainerDir>/etc/nginx/nginx.conf</ContainerDir>
+      <Mode>ro</Mode>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8081]/</WebUI>
