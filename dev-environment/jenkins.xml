@@ -17,9 +17,9 @@
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/var/jenkins_home[/b] : this is where all jenkins data resides.[br][br]
   </Description>
-  <Registry>https://hub.docker.com/_/jenkins</Registry>
+  <Registry>http://tower:5000/raziael/jenkins-docker</Registry>
   <GitHub>https://github.com/jenkinsci/jenkins</GitHub>
-  <Repository>http://tower:5000/raziael/jenkins-docker:v1.0.0</Repository>
+  <Repository>tower:5000/raziael/jenkins-docker:v1.0.0</Repository>
   <Support>https://issues.jenkins-ci.org/secure/Dashboard.jspa</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
