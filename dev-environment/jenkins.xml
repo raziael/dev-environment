@@ -19,7 +19,7 @@
   </Description>
   <Registry>https://hub.docker.com/_/jenkins</Registry>
   <GitHub>https://github.com/jenkinsci/jenkins</GitHub>
-  <Repository>jenkins/jenkins:lts</Repository>
+  <Repository>http://tower:5000/raziael/jenkins-docker:v1.0.0</Repository>
   <Support>https://issues.jenkins-ci.org/secure/Dashboard.jspa</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
@@ -48,11 +48,6 @@
     <Volume>
       <HostDir>/var/run/docker.sock</HostDir>
       <ContainerDir>/var/run/docker.sock</ContainerDir>
-      <Mode>ro</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/usr/bin/docker</HostDir>
-      <ContainerDir>/usr/bin/docker</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
   </Data>
