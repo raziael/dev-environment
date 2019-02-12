@@ -45,6 +45,16 @@
       <ContainerDir>/var/jenkins_home</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/usr/bin/docker</HostDir>
+      <ContainerDir>/usr/bin/docker</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8082]/jenkins</WebUI>
   <Banner></Banner>
