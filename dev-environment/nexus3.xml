@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Date>2019-2-10</Date>
+  <Date>2019-2-19</Date>
   <Beta>False</Beta>
   <Category>SoftwareDevelopment:CD SoftwareDevelopment:CI</Category>
   <Name>Nexus</Name>
@@ -10,7 +10,7 @@
     - Initial Release
   </Changes>
   <Overview>
-    Sonatype Nexus repository
+    Sonatype Nexus3 repository
   </Overview>
   <Description>
     Store and distribute Maven/Java, npm, NuGet, RubyGems, Docker, P2, OBR, APT and YUM and more.[br][br]
@@ -19,24 +19,29 @@
   </Description>
   <Registry>https://hub.docker.com/r/sonatype/nexus</Registry>
   <GitHub>https://github.com/sonatype/nexus3</GitHub>
-  <Repository>sonatype/nexus:latest</Repository>
+  <Repository>sonatype/nexus3:latest</Repository>
   <Support>https://issues.sonatype.org/projects/NEXUS</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
     <Publish>
       <Port>
-        <HostPort>8081</HostPort>
+        <HostPort>8181</HostPort>
         <ContainerPort>8081</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Name>NEXUS_CONTEXT</Name>
+      <Value>nexus</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/development/nexus-data</HostDir>
-      <ContainerDir>/sonatype-work</ContainerDir>
+      <HostDir>/mnt/user/appdata/development/nexus3-data</HostDir>
+      <ContainerDir>/opt/sonatype/nexus</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
