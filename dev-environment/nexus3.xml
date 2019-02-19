@@ -26,7 +26,7 @@
   <Networking>
     <Publish>
       <Port>
-        <HostPort>8181</HostPort>
+        <HostPort>8081</HostPort>
         <ContainerPort>8081</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -40,8 +40,8 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/development/nexus3-data</HostDir>
-      <ContainerDir>/opt/sonatype/nexus</ContainerDir>
+      <HostDir>/mnt/user/appdata/development/nexus-data</HostDir>
+      <ContainerDir>/nexus-data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
