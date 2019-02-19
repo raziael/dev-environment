@@ -36,7 +36,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/development/nexus-data</HostDir>
-      <ContainerDir>/sonatype-work</ContainerDir>
+      <ContainerDir>/opt/sonatype/nexus</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
