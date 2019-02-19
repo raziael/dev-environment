@@ -32,7 +32,12 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Name>NEXUS_CONTEXT</Name>
+      <Value>nexus</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/development/nexus-data</HostDir>
