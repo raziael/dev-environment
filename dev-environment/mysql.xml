@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
 	<Beta>False</Beta>
-	<Category>Productivity: Tools:</Category>
+	<Category>Productivity: Tools</Category>
 	<Name>MySQL</Name>
 	<Overview>
     MySQL strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server.
   </Overview>
 	<Description>
-    MySQL strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server. [br][br]
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/db[/b] : this path is where the MySQL database files are stored to.
+    MySQL strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server.
   </Description>
 	<Registry>https://hub.docker.com/_/mysql</Registry>
 	<GitHub>http://github.com/mysql</GitHub>
@@ -35,7 +33,7 @@
 	</Environment>
 	<Data>
 		<Volume>
-			<HostDir>/mnt/user/appdata/development/mysql</HostDir>
+			<HostDir>/mnt/user/appdata/development/mysql/data</HostDir>
 			<ContainerDir>/var/lib/mysql</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume>
