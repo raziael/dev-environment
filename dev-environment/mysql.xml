@@ -28,13 +28,18 @@
 	<Environment>
 		<Variable>
 			<Name>MYSQL_ROOT_PASSWORD_FILE</Name>
-			<Value>/var/lib/mysql/MYSQL_ROOT_PASSWORD</Value>
+			<Value>/environment/MYSQL_ROOT_PASSWORD</Value>
 		</Variable>
 	</Environment>
 	<Data>
-		<Volume>
+    <Volume>
 			<HostDir>/mnt/user/appdata/development/mysql/data</HostDir>
 			<ContainerDir>/var/lib/mysql</ContainerDir>
+			<Mode>rw</Mode>
+		</Volume>
+		<Volume>
+			<HostDir>/mnt/user/appdata/development/mysql</HostDir>
+			<ContainerDir>/environment</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume>
 	</Data>
