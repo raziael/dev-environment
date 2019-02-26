@@ -30,6 +30,18 @@
 			<Name>MYSQL_ROOT_PASSWORD_FILE</Name>
 			<Value>/environment/MYSQL_ROOT_PASSWORD</Value>
 		</Variable>
+    <Variable>
+			<Name>MYSQL_DATABASE_FILE</Name>
+			<Value>/environment/MYSQL_DATABASE</Value>
+		</Variable>
+    <Variable>
+			<Name>MYSQL_PASSWORD_FILE</Name>
+			<Value>/environment/MYSQL_PASSWORD</Value>
+		</Variable>
+    <Variable>
+			<Name>MYSQL_USER_FILE</Name>
+			<Value>/environment/MYSQL_USER</Value>
+		</Variable>
 	</Environment>
 	<Data>
     <Volume>
