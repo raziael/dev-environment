@@ -11,10 +11,10 @@
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/db[/b] : this path is where the MySQL database files are stored to.
   </Description>
-  <Registry>https://tower:5000/raziael/mysql</Registry>
+  <Registry>https://hub.docker.com/_/mysql</Registry>
   <GitHub></GitHub>
-  <Repository>tower:5000/raziael/mysql</Repository>
-  <Support>http://centally.com</Support>
+  <Repository>mysql</Repository>
+  <Support>http://mysql.com</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
