@@ -12,7 +12,7 @@
     [b]/db[/b] : this path is where the MySQL database files are stored to.
   </Description>
 	<Registry>https://hub.docker.com/_/mysql</Registry>
-	<GitHub></GitHub>
+	<GitHub>http://github.com/mysql</GitHub>
 	<Repository>mysql</Repository>
 	<Support>http://mysql.com</Support>
 	<BindTime>true</BindTime>
@@ -30,7 +30,7 @@
 	<Environment>
 		<Variable>
 			<Name>MYSQL_ROOT_PASSWORD_FILE</Name>
-			<Value>/mnt/user/appdata/development/mysql/MYSQL_ROOT_PASSWORD</Value>
+			<Value>/var/lib/mysql/MYSQL_ROOT_PASSWORD</Value>
 		</Variable>
 	</Environment>
 	<Data>
@@ -40,7 +40,7 @@
 			<Mode>rw</Mode>
 		</Volume>
 	</Data>
-	<WebUI></WebUI>
+	<WebUI>http://[IP]:[PORT:8980]/</WebUI>
 	<Banner></Banner>
 	<Icon>https://s3.amazonaws.com/cntech.io/logos/mysql.png</Icon>
 </Container>
