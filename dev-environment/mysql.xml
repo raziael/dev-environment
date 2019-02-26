@@ -27,7 +27,12 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Name>MYSQL_ROOT_PASSWORD_FILE</Name>
+      <Value>/mnt/user/appdata/development/mysql/MYSQL_ROOT_PASSWORD</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/development/mysql</HostDir>
