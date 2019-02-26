@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+<Beta>False</Beta>
+<Category>Productivity: Tools:</Category>
+  <Name>MySQL</Name>
+  <Overview>
+    MySQL strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server.
+  </Overview>
+  <Description>
+    MySQL strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server. [br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/db[/b] : this path is where the MySQL database files are stored to.
+  </Description>
+  <Registry>https://tower:5000/raziael/mysql</Registry>
+  <GitHub></GitHub>
+  <Repository>tower:5000/raziael/mysql</Repository>
+  <Support>http://centally.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/development/mysql</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://s3.amazonaws.com/cntech.io/logos/mysql.png<</Icon>
+</Container>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2019-2-10</Date>
+  <Beta>False</Beta>
+  <Category>Centally:Core</Category>
+  <Name>Users API</Name>
+  <Project>https://centally.com/</Project>
+  <Changes>
+      [font size=3]2019.02.26[/font]
+      - Initial Release
+  </Changes>
+  <Overview>
+    Users API 
+  </Overview>
+  <Description>
+    The `users-api` is part of Core Stack[br][br]
+  </Description>
+  <Registry>http://tower:5000/raziael/users-api</Registry>
+  <GitHub></GitHub>
+  <Repository>tower:5000/raziael/users-api</Repository>
+  <Support>https://centally.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>ENVIRONMENT</Name>
+      <Value>dev</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    </Volume>
+  </Data>
+  <WebUI>http://tower:8080/api/v3/users</WebUI>
+  <Banner></Banner>
+  <Icon>https://s3.amazonaws.com/cntech.io/logos/users-api.png</Icon>
+</Containers>
