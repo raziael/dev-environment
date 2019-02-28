@@ -31,6 +31,12 @@
       </Port>
     </Publish>
   </Networking>
+  <Environment>
+		<Variable>
+			<Name>AWS_REGION</Name>
+			<Value>us-east-1</Value>
+		</Variable>
+	</Environment>
   <WebUI>http://[IP]:[PORT]/</WebUI>
   <Banner></Banner>
   <Icon>https://s3.amazonaws.com/cntech.io/logos/pinned.png</Icon>
