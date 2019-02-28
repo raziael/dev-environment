@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2019-2-10</Date>
+  <Beta>False</Beta>
+  <Category>Centally</Category>
+  <Name>PinnedEventsAPI</Name>
+  <Project>https://centally.com/</Project>
+  <Changes>
+      [font size=3]2019.02.26[/font]
+      - Initial Release
+  </Changes>
+  <Overview>
+    PinnedEvents API
+  </Overview>
+  <Description>
+    OAuth2  Multi-Site Implementation[br][br]
+  </Description>
+  <Registry>http://tower:5000/raziael/pinnedevents-api</Registry>
+  <GitHub>https://github.com/raziael</GitHub>
+  <Repository>tower:5000/raziael/pinnedevents-api</Repository>
+  <Support>https://centally.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8084</HostPort>
+        <ContainerPort>8084</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <WebUI>http://[IP]:[PORT]/</WebUI>
+  <Banner></Banner>
+  <Icon>https://s3.amazonaws.com/cntech.io/logos/pinned.png</Icon>
+</Containers>
