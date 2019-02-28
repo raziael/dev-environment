@@ -17,7 +17,7 @@
   </Description>
   <Registry>http://tower:5000/raziael/users-api</Registry>
   <GitHub></GitHub>
-  <Repository>tower:5000/raziael/users-api</Repository>
+  <Repository>tower:5000/raziael/users-api:latest</Repository>
   <Support>https://centally.com</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
