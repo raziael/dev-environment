@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2019-2-10</Date>
+  <Beta>False</Beta>
+  <Category>SoftwareDevelopment</Category>
+  <Name>Redis</Name>
+  <Project>http://redis.com/</Project>
+  <Changes>
+[font size=3]2019.02.10[/font]
+- Initial Release
+  </Changes>
+  <Overview>
+    Redis cache
+  </Overview>
+  <Description>
+    Redis cache
+  </Description>
+  <Registry>https://hub.docker.com/_/redis</Registry>
+  <GitHub>https://github.com/redis</GitHub>
+  <Repository>redis</Repository>
+  <Support>https://issues.nginx</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6379</HostPort>
+        <ContainerPort>6379</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <WebUI>http://tower:6379/</WebUI>
+  <Banner></Banner>
+  <Icon>https://s3.amazonaws.com/cntech.io/logos/redis.png</Icon>
+</Containers>

@@ -13,7 +13,7 @@
     Users API 
   </Overview>
   <Description>
-    The `users-api` is part of Core Stack[br][br]
+    The users-api is part of Core Stack[br][br]
   </Description>
   <Registry>http://tower:5000/raziael/users-api</Registry>
   <GitHub>https://github.com/raziael</GitHub>
@@ -33,5 +33,5 @@
   </Networking>
   <WebUI>http://tower:8080/api/v3/users</WebUI>
   <Banner></Banner>
-  <Icon>https://s3.amazonaws.com/cntech.io/logos/users-api.png</Icon>
+  <Icon>https://s3.amazonaws.com/cntech.io/logos/users.png</Icon>
 </Containers>

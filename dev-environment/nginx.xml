@@ -10,13 +10,10 @@
 - Initial Release
   </Changes>
   <Overview>
-    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!
+   NginX
   </Overview>
   <Description>
-    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : this is where PMS will store it's databases and configuration.[br][br]
-    [b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.
+    Nginx
   </Description>
   <Registry>https://hub.docker.com/_/nginx</Registry>
   <GitHub>https://github.com/nginx</GitHub>
