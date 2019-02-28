@@ -16,7 +16,7 @@
     The `users-api` is part of Core Stack[br][br]
   </Description>
   <Registry>http://tower:5000/raziael/users-api</Registry>
-  <GitHub></GitHub>
+  <GitHub>https://github.com/raziael</GitHub>
   <Repository>tower:5000/raziael/users-api:latest</Repository>
   <Support>https://centally.com</Support>
   <BindTime>true</BindTime>
@@ -31,15 +31,6 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>ENVIRONMENT</Name>
-      <Value>dev</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    </Volume>
-  </Data>
   <WebUI>http://tower:8080/api/v3/users</WebUI>
   <Banner></Banner>
   <Icon>https://s3.amazonaws.com/cntech.io/logos/users-api.png</Icon>
