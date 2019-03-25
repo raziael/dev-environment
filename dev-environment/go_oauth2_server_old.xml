@@ -17,7 +17,7 @@
   </Description>
   <Registry>http://tower:5000/raziael/go_oauth2_server_old</Registry>
   <GitHub>https://github.com/raziael</GitHub>
-  <Repository>tower:5000/raziael/go_oauth2_server_old:final</Repository>
+  <Repository>tower:5000/raziael/go_oauth2_server_old:final runserver</Repository>
   <Support>https://centally.com</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
