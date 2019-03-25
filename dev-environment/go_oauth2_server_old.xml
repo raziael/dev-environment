@@ -25,8 +25,8 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8081</HostPort>
-        <ContainerPort>8881</ContainerPort>
+        <HostPort>8881</HostPort>
+        <ContainerPort>8081</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
